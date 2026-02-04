@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Autenticidade de documentos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <img src="img/mentor-web.png" alt="Logo da instituição" class="logo">
+
+<img src="img/validacao-documentos.png" 
+     alt="Autenticidade de Documentos" 
+     class="titulo-validacao">
+
+    <div class="status valid">✔ Documento válido</div>
+
+    <div class="info">
+      <p><strong>Nome:</strong> Vinicius Franck Lourenço</p>
+      <p><strong>Instituição:</strong> Faculdade de Campina Grande do Sul</p>
+      <p><strong>Curso:</strong> Gestão da Tecnologia da Informação</p>
+      <p><strong>Validade:</strong> 2027</p>
+    </div>
+
+    <p class="footer">
+      Consulta realizada em: <span id="data"></span>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById("data").innerText =
+      new Date().toLocaleString("pt-BR");
+  </script>
+
+</body>
+</html>
